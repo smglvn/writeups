@@ -2,7 +2,7 @@
 ## REVENGE
 > A bowl of spaghetti is nice. What about a bowl of pythons?
 >
-> [chal.py]() 
+> [chal.py](https://github.com/smglvn/writeups/blob/master/San%20Diego%20CTF%202021/A%20Bowl%20of%20Pythons/chal.py) 
 
 - We are given an obfuscated code. Let's figure it out.
 - First of all, flag in the beginning - is not a flag((
@@ -18,6 +18,6 @@ The second condition checks that it ends in a standard way.
 g is the encoded part of the flag inside the curly braces, which is xor in the third condition. 
 
 Let's write the inverse transformation function `def get_flag()` and get the flag.
-- A solution [script]()
+- A solution [script](https://github.com/smglvn/writeups/blob/master/San%20Diego%20CTF%202021/A%20Bowl%20of%20Pythons/solution.py)
 
 Flag=sdctf{v3ry-t4sty-sph4g3tt1}
