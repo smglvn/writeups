@@ -28,8 +28,8 @@ def e(f):
 
 
 def get_flag():
-    flag_length = len(b't2q}*\x7f&n[5V\xb42a\x7f3\xac\x87\xe6\xb4')
-    dexor_flag = ((a(i) & 0xff) ^ b't2q}*\x7f&n[5V\xb42a\x7f3\xac\x87\xe6\xb4'[i] for i in range(flag_length))
+    encode_flag = b't2q}*\x7f&n[5V\xb42a\x7f3\xac\x87\xe6\xb4'
+    dexor_flag = ((a(i) & 0xff) ^ encode_flag[i] for i in range(len(encode_flag)))
     decode_flag = ''.join(list(map(lambda x: chr(x), dexor_flag)))
     print(decode_flag)
     return 'sdctf{' + decode_flag + '}'
